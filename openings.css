@@ -1,0 +1,41 @@
+body{
+    background-image:url('./R.png');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.bg1{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 12px;
+    border: solid 3px white;
+    margin-top: 140px;
+    margin-left: 285px;
+
+    animation-name: infiniteupdown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all;
+}
+ul li{
+    list-style-type: none;
+    font-family: arial;
+    color: white;
+    font-size: 20px;
+    padding-top: 18px;
+    margin-left: 45px;
+}
+
+@keyframes infiniteupdown{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
